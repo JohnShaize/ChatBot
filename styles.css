@@ -1,0 +1,92 @@
+body {
+    background: linear-gradient(135deg, #1e1e1e 0%, #121212 100%);
+    color: #ffffff; /* Light text */
+    font-family: 'Arial', sans-serif; /* Font style */
+}
+
+img {
+    width: 200px; /* Set width */
+    height: 200px; /* Set height */
+    margin: 0 auto; /* Center horizontally */
+    display: block; 
+}
+
+img:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+    transition: transform 0.9s; /* Smooth transition */
+}
+
+h1 {
+    
+    font-size: 2.5em; /* Title size */
+    text-align: left; /* Left align title */
+    margin-top: 0px; /* Margin above title */
+}
+
+
+
+textarea {
+    border: 2px solid #ffffff; /* White border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside textarea */
+    background-color: #2b2b2b; /* Dark textarea background */
+    color: #ffffff; /* Light text color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+textarea:focus {
+    border-color: #ff6347; /* Focus border color */
+}
+
+textarea::placeholder {
+    color: #a9a9a9; /* Placeholder text color */
+    opacity: 0.7; /* Slightly faded for subtlety */
+}
+
+button {
+    background-color: #000000; /* Button color */
+    color: #ffffff; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding around button */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 1em; /* Button font size */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #e5533d; /* Change this to your desired hover color */
+}
+
+button:active {
+    transform: scale(0.95); /* Slightly smaller on click */
+}
+
+#chat-history {
+    background-color: #2b2b2b; /* Chat history background */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding around chat history */
+    margin-top: 20px; /* Margin above chat history */
+    max-height: 400px; /* Limit height */
+    overflow-y: auto; /* Scrollable */
+}
+
+#chat-history .chat-entry {
+    margin: 10px 0; /* Space between entries */
+    padding: 10px; /* Inner padding for entries */
+    border-left: 4px solid #ff7f50; /* Left border for user messages */
+    background-color: #333; /* Slightly lighter background for entries */
+    border-radius: 3px; /* Rounded corners */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Smaller title on mobile */
+    }
+
+    textarea, button {
+        width: 100%; /* Full width on mobile */
+    }
+}
